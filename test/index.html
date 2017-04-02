@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	</head>
+
+	<body>
+		<form method="post" action="signup.php" enctype="multipart/form-data">
+			<div class="input-cont">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+			</div><br>
+			<div class="input-cont">
+				<label for="apellido">Apellido:</label>
+				<input type="text" name="apellido" required>
+			</div><br>
+			<div class="input-cont">
+				<label for="usuario">Usuario:</label>
+				<input type="text" name="usuario" required>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="pass">Password:</label>
+				<input type="text" name="pass" required>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="email">email:</label>
+				<input type="email" name="email" required>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="region">Region:</label>
+				<select name="region">
+					<option value="Este">Este</option>
+					<option value="Sur">Sur</option>
+					<option value="Cibao">Cibao</option>
+				</select>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="provincia">Provincia:</label>
+				<select name="provincia">
+					<option value="Neiba">Neiba</option>
+					<option value="Santa Cruz de Barahona">Barahona</option>
+					<option value="Duarte">Duarte</option>
+				</select>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="municipio">Municipio:</label>
+				<select name="municipio">
+					<option value="sfm">sfm</option>
+					<option value="Barahona">Barahona</option>
+					<option value="ciudad de neyba">ciudad de neyba</option>
+				</select>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="telefono1">Tele:</label>
+				<input type="text" name="telefono1"  required>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="telefono2">Tele2:</label>
+				<input type="text" name="telefono2">
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="foto">foto:</label>
+				<input type="file" name="foto">
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="fb">facebook:</label>
+				<input type="text" name="fb">
+			</div><br>
+			
+			<button type="submit">SUBIR</button>
+		</form>
+	
+	</body>
+
+</html>
