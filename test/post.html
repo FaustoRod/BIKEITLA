@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	</head>
+
+	<body>
+		<form method="post" action="post.php" enctype="multipart/form-data">
+			<div class="input-cont">
+				<label for="id">id:</label>
+				<input type="text" name="id_user" required>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="titulo">titulo:</label>
+				<input type="text" name="titulo" required>
+			</div><br>
+			<div class="input-cont">
+				<label for="marca">marca:</label>
+				<input type="text" name="marca" required>
+			</div><br>
+			<div class="input-cont">
+				<label for="modelo">modelo:</label>
+				<input type="text" name="modelo" required>
+			</div><br>
+			
+			
+			<div class="input-cont">
+				<label for="tipo">tipo:</label>
+				<select name="tipo">
+					<option value="bicicleta">bicicleta</option>
+					<option value="accesorio">accesorio</option>
+					<option value="repuestos">repuestos</option>
+				</select>
+			</div><br>
+			
+			<div class="input-cont">
+				<label for="clasificacion">clasificacion:</label>
+				<select name="clasificacion">
+					<option value="bmx">bmx</option>
+					<option value="cruise">cruise</option>
+					<option value="montana">montana</option>
+				</select>
+			</div><br>
+			
+			
+			<div class="input-cont">
+				<label for="descripcion">descripcion:</label>
+				<input type="text" name="descripcion"  required>
+			</div><br>
+			
+			
+			<button type="submit">SUBIR</button>
+		</form>
+	
+	</body>
+
+</html>
