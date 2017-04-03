@@ -12,7 +12,7 @@ function viewall($conexion){
 }
 
 function viewpics($conexion){
-	$sql = "SELECT foto FROM post_fotos INNER JOIN testpost ON post_fotos.id_post=testpost.id_post";
+	$sql = "SELECT post_fotos.id_post, foto FROM post_fotos INNER JOIN testpost ON post_fotos.id_post=testpost.id_post WHERE testpost.status = 1";
 	
 	$resultado = $conexion->query($sql);
 	
