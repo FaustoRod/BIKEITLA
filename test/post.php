@@ -16,10 +16,10 @@ $conexion->query($sql);
 
 if($conexion->affected_rows === 1){
 	echo "insertado";
+
 }else{
 echo "error";
 }
-
 
 
 /*
