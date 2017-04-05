@@ -1,0 +1,106 @@
+.contSubCateg{
+  width: 300px;
+  height: auto;
+  border: 1px solid transparent;
+  margin-left: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 15px 5px  #e0e0e0;
+}
+
+.subContenido>hr{
+  width: 100%;
+  box-shadow: 1px 2px 55px 1px  #e0e0e0;
+}
+
+.contFoot{
+  margin: 15px;
+  border: 1px solid black;
+  background: #f5f5f5;
+  width: 99.9%;
+  margin: 15px;
+  margin-left: 0px;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerMain{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacto>li>h5{
+  margin: 15px;
+}
+
+.imgLogo{
+  margin-left: 5px;
+}
+
+#iconoFacebook{
+  width: 50px;
+  height: 50px;
+}
+
+.contFoot>.datosFoot{
+  margin: 5px;
+  border: 1px solid blue;
+}
+
+.datosFoot{
+  width: 99%;
+  height: 60px;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+.datosfoot>#imgFoot{
+  width: 500px;
+  height: 350px;
+}
+
+
+
+.socialIcons{
+  margin-left: 38%;
+  margin: 15px;
+  height: 50px;
+  width: 50px;
+}
+.socialIcons>#iconoInsta{
+  margin-top: 3px;
+}
+
+.contSocialIcons{
+  margin-left: 38%;
+  margin-bottom: 6px;
+  margin-top: -10px;
+  width: auto;
+  height: 50px;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.copyRight{
+  margin-left: 5px;
+}
+
+.contLinks{
+  margin-left: 350px;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.links{
+  margin: 10px;
+  border: 0.5px solid #bdbdbd;
+  border-radius: 5px;
+  height: 15px;
+  width: 80px;
+
+}
