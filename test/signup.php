@@ -24,14 +24,17 @@ if(move_uploaded_file($archivo,$dir)){
 
 $fblink = $_POST['fb'];
 
-$sql = "INSERT INTO testsignup (nombre,apellido,usuario,password,email,region,provincia,municipio,telefono1,telefono2,foto,facebook) VALUES ('$nombre','$apellido','$usuario','$password','$email','$region','$provincia','$municipio','$telefono1','$telefono2','$foto','$fblink')";
+$sql = "INSERT INTO testsignup (nombre,apellido,usuario,password,email,region
+	,provincia,municipio,telefono1,telefono2,foto,facebook)
+	 VALUES ('$nombre','$apellido','$usuario','$password','$email','$region',
+	'$provincia','$municipio','$telefono1','$telefono2','$foto','$fblink')";
 
 $conexion->query($sql);
 
 
 if(mysqli_affected_rows($conexion)===1){
 	echo "changel";
-	
+
 }else{
 	$conexion->connect_error();
 }

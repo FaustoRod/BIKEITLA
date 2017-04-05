@@ -11,11 +11,12 @@ $clasificacion = $_POST['clasificacion'];
 $descripcion = $_POST['descripcion'];
 
 $sql = "INSERT INTO testpost (id_user,titulo,marca,modelo,tipo,clasificacion,descripcion) VALUES ('$id_user','$titulo','$marca','$modelo','$tipo','$clasificacion','$descripcion')"  ;
-	
+
 $conexion->query($sql);
 
 if($conexion->affected_rows === 1){
 	echo "insertado";
+	header("refresh:2;url=loadpic2.html");
 
 }else{
 echo "error";

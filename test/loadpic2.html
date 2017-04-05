@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subir fotos 2</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+<button id="btn-add-input">Add</button>
+  <form method="post" action="loadpic.php" enctype="multipart/form-data">
+    <div class="input-cont">
+      <label for="id_post">idpost:</label>
+      <input type="text" name="id_post">
+    </div>
+    <br>
+
+    <div  id="file1" class="input-cont">
+      <label for="pic">pic1:</label>
+      <input  type="file" name="pic[]">
+    </div><br>
+
+    <div  id="file2" class="input-cont" style="visibility:hidden">
+      <label for="pic">pic2:</label>
+      <input  type="file" name="pic[]" >
+    </div><br>
+
+    <div  id="file3" class="input-cont" style="visibility:hidden">
+      <label for="pic">pic3:</label>
+      <input   type="file" name="pic[]">
+    </div><br>
+
+
+    <div  id="file4" class="input-cont" style="visibility:hidden">
+      <label for="pic">pic4:</label>
+      <input type="file" name="pic[]">
+    </div><br>
+
+
+      <div id="file5"  class="input-cont" style="visibility:hidden">
+              <label for="pic">pic5:</label>
+              <input type="file" name="pic[]">
+            </div><br>
+
+    <button type="submit">SUBIR</button>
+  </form>
+
+  <script src="jquery-311.min.js"></script>
+  <script src="testjs.js"></script>
+
+</body>
+</html>
