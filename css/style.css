@@ -1,3 +1,8 @@
+*{
+  background-color: #fafafa;
+}
+
+
 .contSubCateg{
   width: 300px;
   height: auto;
@@ -11,6 +16,151 @@
   width: 100%;
   box-shadow: 1px 2px 55px 1px  #e0e0e0;
 }
+
+.subContenido>ul{
+  list-style-type: none;
+}
+
+
+.contPagProd{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  box-shadow: 2px 3px 35px 5px  #e0e0e0;
+  border-radius: 5px;
+}
+
+.contProd{
+  margin-top: 5px;
+  border-radius: 15px;
+  max-width: 50%;
+  margin-left: 150px;
+  width: 50%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction:column;
+  flex-direction: column;
+}
+
+.producto{
+  height: auto;
+  width: 840px;
+  height: 600px;
+  box-shadow: 5px 5px 20px 15px #eeeeee;
+  border-radius: 15px;
+}
+.producto>img{
+  height: 590px;
+  width: 830px;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+}
+
+
+.detalleProd{
+
+  border-radius: 15px;
+  height: 250px;
+  width: 840px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 20px 15px #eeeeee;
+}
+.detalleProd>h6{
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.detalleProd>p{
+  font-family: cursive;
+  margin-left: 10px;
+}
+
+.conmpartirProd{
+  border: 1px solid red;
+  height: 250px;
+  margin-top: 150px;
+}
+
+
+
+.contPrecioVendedor{
+
+  border-radius: 15px;
+  width: 430px;
+  height: auto;
+  margin-left: 10%;
+  margin-top: 5px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction:column;
+  flex-direction: column;
+
+}
+
+.detallePrecio{
+  border: 0.5px solid blue;
+  border-radius: 15px;
+  height: 250px;
+  width: 400px;
+  margin: 15px;
+  box-shadow: 5px 5px 10px 5px #eeeeee;
+}
+.detallePrecio>hr{
+  width: 70%;
+  margin-left: 55px;
+}
+.btnContactar>button{
+  margin-left: 30%;
+}
+
+
+.detalleVendedor{
+  border: 0.5px solid red;
+  border-radius: 15px;
+  height: 250px;
+  width: 400px;
+  margin: 15px;
+  box-shadow: 5px 5px 10px 5px #eeeeee;
+}
+
+.contFotoPerfil{
+  width: 100px;
+  height: 100px;
+  margin-left: 40%;
+  margin-top: 15px;
+}
+.contFotoPerfil>img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.acercaVend>h6{
+
+  text-align: center;
+  text-transform: uppercase;
+}
+.acercaVend>hr{
+  color: #6c6c6c;
+  width: 70%;
+  margin-left: 58px;
+}
+
+
+
+
+
+
+
+
+
 
 .contFoot{
   margin: 15px;

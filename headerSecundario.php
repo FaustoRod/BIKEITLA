@@ -56,7 +56,7 @@
 
   </div>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default"  style="margin-bottom:1px;">
     <div class="container-fluid">
 
       <ul class="nav navbar-nav">
@@ -83,51 +83,6 @@
 
 </header>
 
-
-  <div class="contSubCateg">
-
-    <div class="subContenido">
-      <ul>
-        <h5><strong>Bicicletas</strong></h5>
-      </ul>
-
-      <hr>
-      <ul>
-        <li><a href="#" >Mountain Bike </a></li>
-        <li><a href="#" >BMX </a></li>
-        <li><a href="#" >Race Bikes</a></li>
-        <li><a href="#" >Monocicle</a></li>
-      </ul>
-
-
-      <ul>
-        <h5><strong>Repuestos</strong></h5>
-      </ul>
-      <hr>
-      <ul>
-        <li><a href="#" >Gomas </a></li>
-        <li><a href="#" >Aros </a></li>
-        <li><a href="#" >Rayos</a></li>
-        <li><a href="#" >Frenos</a></li>
-        <li><a href="#" >Selector de cambios </a></li>
-        <li><a href="#" >Timon </a></li>
-        <li><a href="#" >Sillon</a></li>
-        <li><a href="#" >Chasis</a></li>
-      </ul>
-
-      <ul>
-        <h5><strong>Accesorios</strong></h5>
-      </ul>
-      <hr>
-      <ul>
-        <li><a href="#" >Dynamo </a></li>
-        <li><a href="#" >Luces </a></li>
-        <li><a href="#" >Calcomanias</a></li>
-        <li><a href="#" >Reflectores</a></li>
-
-      </ul>
-    </div> <!--SubCategorias-->
-  </div><!--Contenedor de las subcategorias-->
 
 
 
