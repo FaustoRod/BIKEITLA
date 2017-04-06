@@ -32,14 +32,4 @@ function viewpics($id){
 	}
 }
 
-function deletePic($post,$name){
-	$sql = "DELETE FROM post_fotos WHERE id_post = $post AND nombrefile = $name";
-
-	$conexion->query($sql);
-
-	if(mysqli_affected_rows($conexion)===1){
-		echo "eliminada la foto";
-	}
-}
-
 ?>

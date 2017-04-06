@@ -8,3 +8,14 @@ $("#btn-add-input").click(function(){
       $("#file" + x.toString()).css("visibility","visible");
     }
 });
+
+$("#btn-delete").click(function(){
+  $.post('deletePic.php',
+  {
+    id:$("#input-delete-post").val(),
+    name:$("#input-delete-picname").val()
+  },
+  function(data,status){
+    alert("DATA: " + data +"\nStatus: " + status);
+  });
+});
