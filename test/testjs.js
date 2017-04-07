@@ -1,4 +1,9 @@
+function getProd(){
 
+    var id = event.target.id;
+    window.location = "producto.php?id=" + id;
+
+}
 
 var x = 1;
 $("#btn-add-input").click(function(){
