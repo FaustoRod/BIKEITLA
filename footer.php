@@ -22,66 +22,13 @@
 
 
 
+<br>
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo"></div>
+      <ul class="mdl-mini-footer__link-list">
 
-<footer>
-
-  <div class="contFoot">
-
-    <div class="footerMain">
-      <div class="imgLogo">
-        <img src="icons/bici.png" alt="imgLogo" id="footerLogo">
-      </div>
-
-      <div class="contacto">
-        <ul class="nav navbar-nav">
-          <li><h5>Las Americas Km.27  |</h5></li>
-          <li><h5>Parque Cibernetico de Santo Domingo |</h5></li>
-          <li><h5>Representante:Fausto Rodriguez |</h5></li>
-          <li><h5>809-720-8199</h5></li>
-        </ul>
-
-      </div>
-
+      </ul>
     </div>
-
-    <div class="datosFoot">
-      <div class="copyRight">
-        <h6>&copy  2017 F.R Tech </h6>
-      </div>
-
-        <div class="contSocialIcons">
-
-          <div class="socialIcons" id="iconoFacebook">
-            <img src="icons/fb.png" alt="facebook">
-          </div>
-
-          <div class="socialIcons" id="iconoInsta">
-            <img src="icons/insta.png" alt="instagram">
-          </div>
-
-          <div class="socialIcons" id="iconoGoogle">
-            <img src="icons/google+.png">
-          </div>
-
-        </div>
-
-        <div class="contLinks">
-
-          <ul class="nav navbar-nav">
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Resportes</a></li>
-            <li><a href="#">Ayuda</a></li>
-          </ul>
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </div>
-
-
-</footer>
-
+  </footer>
 </html>

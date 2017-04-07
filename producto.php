@@ -5,8 +5,8 @@
  <div class="contPagProd">
 
    <div class="contProd">
-     <div class="producto">
-       <img src="img/nevera.jpg" alt="prod">
+     <div class="producto img-responsive">
+       <img src="img/nevera.jpg" alt="prod" class="img-responsive">
      </div>
 
      <div class="detalleProd">
@@ -14,6 +14,17 @@
        <p>leknfleknklefnlkenlkfenlkfenlkfelkenflke
          leknflkefnlkefnfekleflknelfknlekfnlefknlefknfleknfelknfelkefn
          lekfnlkfenlefknlfeknleknelfknelknnflknelkneflkenlkenflkefnlkfenlfknlfken</p>
+     </div>
+
+     <div class="conmpartirProd">
+       <div class="text-center" id="infCompartir" style="width:100%; height:auto; border-radius:15px;">
+         <h6>Compartir este producto </h6>
+       </div>
+       <div class="iconoSocial" id="fb">
+        <a href="#"> <img src="icons/fb.png" alt="fb"> </a>
+       </div>
+
+
      </div>
 
    </div>
@@ -50,7 +61,14 @@
        <div class="text-center">
          <h4><strong>Raul Blabla</strong></h4> <!--Aqui El Nombre del vendedor-->
        </div>
-     </div>
+     </div> <!--detalleVendedor-->
+
+
+   </div> <!--contPrecioVendedor-->
+
+
+
+
    </div>
 
- </div>
+ </div><!--contPagProd-->

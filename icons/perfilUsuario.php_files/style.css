@@ -21,7 +21,7 @@
   list-style-type: none;
 }
 
-/*--------- Pagina Producto -----------------*/
+
 .contPagProd{
   display: -webkit-flex;
   display: flex;
@@ -178,8 +178,6 @@
 
 
 
-
-/*-----------------------------------------*/
 /*Formulario de subida de producto*/
 #containerFormProd{
   width: 600px;
@@ -226,22 +224,6 @@
 /*--------------*/
 
 
-/*-----Productos del usuario--------*/
-
-.tablaAnuncios{
-  margin-top: 25px;
-  margin-left: 22%;
-}
-
-#imgTabla>img{
-  width: 50px;
-  height: 50px;
-}
-
-
-
-/*-------------------*/
-
 
 /* ----Perfil Usuario Activo-----*/
 
@@ -252,7 +234,6 @@
 .contFotoyNombre{
   background-color: #eeeeee;
   height: 30%;
-
 }
 
 #containerMod{
@@ -289,7 +270,7 @@ background-color: #eeeeee;
   margin-top:10px;
   width: 600px;
   height: 300px;
-  margin-left: 23.5%;
+  margin-left: 25%;
   margin-bottom: 15px;
 
 }
