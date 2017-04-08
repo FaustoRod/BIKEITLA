@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Select</title>
+  </head>
+  <body>
+    <select id="region">
+      <option value="Este">
+        Este
+      </option>
+      <option value="Sur">
+        Sur
+      </option>
+      <option value="Cibao">
+        Cibao
+      </option>
+    </select>
+
+    <select id="provincia">
+        <option value="Santo Domingo">
+          Santo Domingo
+        </option>
+        <option value="Santo Domingo Este">
+          Santo Domingo Este
+        </option>
+        <option value="Santo Domingo Este 2">
+          Santo Domingo Este 2
+        </option>
+    </select>
+
+    <select id="municipio">
+        <option value="SDM1">
+          SDM1
+        </option>
+        <option value="SDM2">
+          SDM2
+        </option>
+        <option value="SDM3">
+          SDM3
+        </option>
+    </select>
+
+    <script src="jquery-311.min.js"></script>
+
+    <script>
+
+      $("#region").change(function(){
+        var prov = $(this).val();
+        switch(prov){
+          case "Este":
+
+          $("#provincia").html("<option value='Santo Domingo'> Santo Domingo </option>:<option value='Santo Domingo Este'> Santo Domingo Este</option>: <option value='Santo Domingo Este 2'> Santo Domingo Este 2</option>");
+
+          $("#municipio").html("<option value='SDM1'>SDM1</option>: <option value='SDM2'>SDM2</option>: <option value='SDM3'>SDM3</option>");
+          break;
+
+          case "Sur":
+          $("#provincia").html("<option value='Sur1'> Sur1 </option>: <option value='Sur2'> Sur2</option>: <option value='Sur3'> Sur3</option>");
+          $("#municipio").html("<option value='S11'>S11</option>: <option value='S11'>S12</option>: <option value='S13'>S13</option>");
+          break;
+
+          case "Cibao":
+
+          $("#provincia").html("<option value='cibao1'> cibao1 </option>: <option value='cibao2'> cibao2</option>: <option value='cibao3'> cibao3</option>");
+          $("#municipio").html("<option value='C11'>C11</option>: <option value='C12'>C12</option>: <option value='C13'>C13</option>");
+
+          break;
+        }
+      });
+
+      $("#provincia").change(function(){
+        var prov = $(this).val();
+
+        switch(prov){
+          case "Santo Domingo":
+          $("#municipio").html("<option value='SDM1'>SDM1</option>: <option value='SDM2'>SDM2</option>: <option value='SDM3'>SDM3</option>");
+          break;
+
+          case "Santo Domingo Este":
+          $("#municipio").html("<option value='SDME1'>SDME1</option>: <option value='SDME2'>SDME2</option>: <option value='SDME3'>SDME3</option>");
+          break;
+
+          case "Santo Domingo Este 2":
+          $("#municipio").html("<option value='SDME21'>SDME21</option>: <option value='SDME22'>SDME22</option>: <option value='SDME23'>SDME23</option>");
+          break;
+
+          case "Sur1":
+          $("#municipio").html("<option value='S11'>S11</option>: <option value='S11'>S12</option>: <option value='S13'>S13</option>");
+          break;
+
+          case "Sur2":
+          $("#municipio").html("<option value='S21'>S21</option>: <option value='S22'>S22</option>: <option value='S23'>S23</option>");
+          break;
+
+
+          case "Sur3":
+          $("#municipio").html("<option value='S31'>S31</option>: <option value='S32'>S32</option>: <option value='S33'>S33</option>");
+          break;
+
+          case "cibao1":
+          $("#municipio").html("<option value='C11'>C11</option>: <option value='C12'>C12</option>: <option value='C13'>C13</option>");
+          break;
+
+          case "cibao2":
+          $("#municipio").html("<option value='C21'>C21</option>: <option value='C22'>C22</option>: <option value='C23'>C23</option>");
+          break;
+
+          case "cibao3":
+          $("#municipio").html("<option value='C31'>C31</option>: <option value='C32'>C32</option>: <option value='C33'>C33</option>");
+          break;
+        }
+      });
+
+    </script>
+  </body>
+</html>
