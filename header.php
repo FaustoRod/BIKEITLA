@@ -52,36 +52,38 @@
   </nav>  <!--Nav-->
 
 
-  <div class="">  <!--Anuncios(Ads!)-->
+      <div class="">  <!--Anuncios(Ads!)-->
 
-  </div>
+      </div>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
 
-      <ul class="nav navbar-nav">
-        <li><a href="index.php">Inicio</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href=# >Categorias
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Bicicletas</a></li>
-            <li><a href="#">Repuestos</a></li>
-            <li><a href="#">Accesorios</a></li>
+          <ul class="nav navbar-nav">
+            <li><a href="index.php">Inicio</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href=# >Categorias
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Bicicletas</a></li>
+                <li><a href="#">Repuestos</a></li>
+                <li><a href="#">Accesorios</a></li>
 
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="#"> Ayuda</a></li>
-        <li><a href="#">Nosotros</a></li>
-      </ul> <!--Enlaces de la izquierda-->
-    </div> <!--Contenedor de los elementos-->
-  </div> <!--Contenedor de todo el NavBar-->
-</nav>  <!--Nav-->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="#"> Ayuda</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul> <!--Enlaces de la izquierda-->
+        </div> <!--Contenedor de los elementos-->
+      </div> <!--Contenedor de todo el NavBar-->
+    </nav>  <!--Nav-->
 
 </header>
+
+
 
 
   <div class="contSubCateg">
