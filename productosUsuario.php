@@ -17,33 +17,35 @@ include_once("headerSecundario.php");
    <div class="text-center">
      <h4>Productos Publicados</h4>
    </div>
-    <div class="tablaAnuncios">
-      <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric">Titulo</th>
-      <th>Marca</th>
-      <th>Color</th>
-      <th>Precio</th>
-      <th>Imagen</th>
-      <th>Accion</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Nevera</td>
-      <td>LG</td>
-      <td>Negra</td>
-      <td>$120,000</td>
-      <td id="imgTabla"><img src="img/nevera.jpg" alt="foto"></td>
-      <td>
-        <button type="button" class="btn btn-warning">Editar</button>
-        <button type="button" class="btn btn-danger" name="button">Eliminar</button>
-      </td>
 
-    </tr>
-
-  </tbody>
-</table>
+    <div class="table-responsive">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Titulo</th>
+            <th>Marca</th>
+            <th>Tipo</th>
+            <th>Categoria</th>
+            <th>Precio</th>
+            <th>Foto</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bluebird</td>
+            <td>Craynest</td>
+            <td>BMX</td>
+            <td>Bicicleta</td>
+            <td>$6000</td>
+            <td><img class="imgTabla" src="img/nevera.jpg" alt=""></td>
+            <td><button type="button" id="btnEdit" class="btn btn-warning">Editar</button></td>
+            <td><button type="button" id="btnElim" class="btn btn-danger">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
     </div>
- </div>
+    </div>
