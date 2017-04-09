@@ -7,10 +7,10 @@ $titulo = $_POST['titulo'];
 $marca = $_POST['marca'];
 $modelo = $_POST['modelo'];
 $tipo = $_POST['tipo'];
-$clasificacion = $_POST['clasificacion'];
+$categoria = $_POST['categoria'];
 $descripcion = $_POST['descripcion'];
 
-$sql = "INSERT INTO testpost (id_user,titulo,marca,modelo,tipo,clasificacion,descripcion) VALUES ('$id_user','$titulo','$marca','$modelo','$tipo','$clasificacion','$descripcion')"  ;
+$sql = "INSERT INTO testpost (id_user,titulo,marca,modelo,categoria,tipo,descripcion) VALUES ('$id_user','$titulo','$marca','$modelo','$categoria','$tipo','$descripcion')"  ;
 
 $conexion->query($sql);
 

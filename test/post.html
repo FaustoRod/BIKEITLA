@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	
+	<meta charset="utf-8"/>
 	</head>
 
 	<body>
@@ -11,7 +11,7 @@
 				<label for="id">id:</label>
 				<input type="text" name="id_user" required>
 			</div><br>
-			
+
 			<div class="input-cont">
 				<label for="titulo">titulo:</label>
 				<input type="text" name="titulo" required>
@@ -24,36 +24,64 @@
 				<label for="modelo">modelo:</label>
 				<input type="text" name="modelo" required>
 			</div><br>
-			
-			
+
+
 			<div class="input-cont">
-				<label for="tipo">tipo:</label>
-				<select name="tipo">
-					<option value="bicicleta">bicicleta</option>
-					<option value="accesorio">accesorio</option>
-					<option value="repuestos">repuestos</option>
+				<label for="categoria">Categoria:</label>
+				<select name="categoria" id="Categoria">
+					<option value="Bicicleta">Bicicleta</option>
+					<option value="Accesorio">Accesorio</option>
+					<option value="Repuestos">Repuestos</option>
 				</select>
 			</div><br>
-			
+
 			<div class="input-cont">
-				<label for="clasificacion">clasificacion:</label>
-				<select name="clasificacion">
-					<option value="bmx">bmx</option>
-					<option value="cruise">cruise</option>
-					<option value="montana">montana</option>
+				<label for="tipo">Tipo:</label>
+				<select name="tipo" id="Tipo">
+					<option value="BMX">BMX</option>
+	        <option value="Carretera">Carretera</option>
+	        <option value="Montaña">Montaña</option>
+	        <option value="Harley">Harley</option>
+	        <option value="Hibrida">Hibrida</option>
+	        <option value="Velocidad">Velocidad</option>
+	        <option value="Playera">Playera</option>
+	        <option value="Infantil">Infantil</option>
+	        <option value="Reclinada">Reclinada</option>
 				</select>
 			</div><br>
-			
-			
+
+
 			<div class="input-cont">
 				<label for="descripcion">descripcion:</label>
 				<input type="text" name="descripcion"  required>
 			</div><br>
-			
-			
+
+
 			<button type="submit">SUBIR</button>
 		</form>
-	
+				<script src="jquery-311.min.js"></script>
+				<script>
+
+					$("#Categoria").change(function(){
+						var categoria = $(this).val();
+
+						switch (categoria) {
+							case "Bicicleta":
+								$("#Tipo").html("<option value='BMX'>BMX</option>:<option value='Carretera'>Carretera</option>:<option value='Montaña'>Montaña</option>:<option value='Harley'>Harley</option>:<option value='Hibrida'>Hibrida</option>:<option value='Velocidad'>Velocidad</option>:<option value='Playera'>Playera</option>:<option value='Infantil'>Infantil</option>:<option value='Reclinada'>Reclinada</option>");
+								break;
+
+								case "Accesorio":
+									$("#Tipo").html("<option value='Luces'>Luces</option>:<option value='Reflectores'>Reflectores</option>:<option value='Casco'>Casco</option>:<option value='Mochilas'>Mochilas</option>:<option value='Parrillas'>Parrillas</option>:<option value='Ropa'>Ropa</option>:<option value='Dynamos'>Dynamos</option>:<option value='Lentes'>Lentes</option>:<option value='Guantes'>Guantes</option>:<option value='Retrovisores'>Retrovisores</option>:<option value='Parador'>Parador</option>:<option value='Guardalodos'>Guardalodos</option>:<option value='Inflador'>Inflador</option>:<option value='Puños'>Puños</option>");
+									break;
+
+								case "Repuestos":
+									$("#Tipo").html("<option value='Herramientas'>Herramientas</option>:<option value='Gomas'>Gomas</option>:<option value='Amortiguadores'>Amortiguadores</option>:<option value='Piezas pequeñas'>Piezas pequeñas</option>:<option value='Aros'>Aros</option>:<option value='Rayos'>Rayos</option>:<option value='Engranajes'>Engranajes</option>:<option value='Cadenas'>Cadenas</option>:<option value='Switch'>Switch</option>:<option value='Frenos'>Frenos</option>:<option value='Pastillas'>Pastillas</option>:<option value='Pedal'>Pedal</option>");
+									break;
+
+						}
+					});
+
+				</script>
 	</body>
 
 </html>
