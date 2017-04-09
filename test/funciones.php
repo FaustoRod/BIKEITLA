@@ -69,5 +69,14 @@ while($row = mysqli_fetch_array($resultado)){
 }
 };
 
+function getAd($id){
+	include("database.php");
+	$sql = "SELECT 	imagen FROM ads WHERE id = {$id}";
+	$r = $conexion->query($sql);
+	if($row = mysqli_fetch_array($r)){
+		echo $row['imagen'];
+	}
+}
+
 
 ?>

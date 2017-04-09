@@ -59,7 +59,7 @@
       </div>
 
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div>
 
           <ul class="nav navbar-nav">
             <li><a href="index.php">Inicio</a></li>
@@ -89,313 +89,256 @@
 
 <body>
 
-<div class="contGeneral">
-  <div class="contSubCateg">
+<div class="contGeneral container-fluid row">
+  <div class="col-md-2">
+    <div class="contSubCateg">
 
-    <div class="subContenido">
-      <ul>
-        <h5><strong>Bicicletas</strong></h5>
-      </ul>
+      <div class="subContenido">
+        <ul>
+          <h5><strong>Bicicletas</strong></h5>
+        </ul>
 
-      <hr>
-      <ul>
-        <li><a href="#" >Mountain Bike </a></li>
-        <li><a href="#" >BMX </a></li>
-        <li><a href="#" >Race Bikes</a></li>
-        <li><a href="#" >Monocicle</a></li>
-      </ul>
-
-
-      <ul>
-        <h5><strong>Repuestos</strong></h5>
-      </ul>
-      <hr>
-      <ul>
-        <li><a href="#" >Gomas </a></li>
-        <li><a href="#" >Aros </a></li>
-        <li><a href="#" >Rayos</a></li>
-        <li><a href="#" >Frenos</a></li>
-        <li><a href="#" >Selector de cambios </a></li>
-        <li><a href="#" >Timon </a></li>
-        <li><a href="#" >Sillon</a></li>
-        <li><a href="#" >Chasis</a></li>
-      </ul>
-
-      <ul>
-        <h5><strong>Accesorios</strong></h5>
-      </ul>
-      <hr>
-      <ul>
-        <li><a href="#" >Dynamo </a></li>
-        <li><a href="#" >Luces </a></li>
-        <li><a href="#" >Calcomanias</a></li>
-        <li><a href="#" >Reflectores</a></li>
-
-      </ul>
-
-      <ul>
-        <h5><strong>Provincias</strong></h5>
-      </ul>
-      <hr>
-      <ul>
-        <li><a href="#" >Norte Cibao </a></li>
-        <li><a href="#" >Sureste </a></li>
-        <li><a href="#" >Suroeste</a></li>
-
-      </ul>
-    </div> <!--SubCategorias-->
-    </div><!--Contenedor de las subcategorias-->
+        <hr>
+        <ul>
+          <li><a href="#" >Mountain Bike </a></li>
+          <li><a href="#" >BMX </a></li>
+          <li><a href="#" >Race Bikes</a></li>
+          <li><a href="#" >Monocicle</a></li>
+        </ul>
 
 
+        <ul>
+          <h5><strong>Repuestos</strong></h5>
+        </ul>
+        <hr>
+        <ul>
+          <li><a href="#" >Gomas </a></li>
+          <li><a href="#" >Aros </a></li>
+          <li><a href="#" >Rayos</a></li>
+          <li><a href="#" >Frenos</a></li>
+          <li><a href="#" >Selector de cambios </a></li>
+          <li><a href="#" >Timon </a></li>
+          <li><a href="#" >Sillon</a></li>
+          <li><a href="#" >Chasis</a></li>
+        </ul>
 
-  <div class="contTarjetas">
+        <ul>
+          <h5><strong>Accesorios</strong></h5>
+        </ul>
+        <hr>
+        <ul>
+          <li><a href="#" >Dynamo </a></li>
+          <li><a href="#" >Luces </a></li>
+          <li><a href="#" >Calcomanias</a></li>
+          <li><a href="#" >Reflectores</a></li>
+
+        </ul>
+
+        <ul>
+          <h5><strong>Provincias</strong></h5>
+        </ul>
+        <hr>
+        <ul>
+          <li><a href="#" >Norte Cibao </a></li>
+          <li><a href="#" >Sureste </a></li>
+          <li><a href="#" >Suroeste</a></li>
+
+        </ul>
+      </div> <!--SubCategorias-->
+      </div><!--Contenedor de las subcategorias-->
+  </div>
 
 
+  <div class="col-md-8">
 
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
+    <div class="contTarjetas">
 
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
-        </div>
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
 
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
 
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
-
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
-        </div>
-
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
-
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
-
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
-        </div>
-
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
-
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
-
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
         </div>
 
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
 
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
 
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
-        </div>
-
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
-
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
-
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
         </div>
 
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
 
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
 
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
-        </div>
-
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
-
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
-
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
         </div>
 
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
 
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
 
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
-        </div>
-
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
-
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
-
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
         </div>
 
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
 
-      <div class="tarjetilla">
-        <div class="imagenTarj">
-          <img  src="img/kk.jpg" alt="">
-        </div>
-        <div class="datosTarj">
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
 
-        <div class="nombreTarjProd">
-          <a href="#"><h4>NombreProducto</h4></a>
-        </div>
-        <div class="precioTarjProd">
-          <h5>$48484 Precio</h5>
-        </div>
-        <div class="infoTarjProd">
-          <p>InfoProducto</p>
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
         </div>
 
-        <div class="btnAccion">
-          <button type="button" class="btn btn-warning">Comprar</button>
-        </div>
-        </div>
-      </div>
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
 
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
+
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
+
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
+
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="tarjetilla">
+          <div class="imagenTarj">
+            <img  src="img/kk.jpg" alt="">
+          </div>
+          <div class="datosTarj">
+
+          <div class="nombreTarjProd">
+            <a href="#"><h4>NombreProducto</h4></a>
+          </div>
+          <div class="precioTarjProd">
+            <h5>$48484 Precio</h5>
+          </div>
+          <div class="infoTarjProd">
+            <p>InfoProducto</p>
+          </div>
+
+          <div class="btnAccion">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
 
   </div>
+  <div class="col-md-2">
+
+  </div>
+
 
 
 
