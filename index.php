@@ -89,8 +89,8 @@
 
 <body>
 
-  <div class="contGeneral">
-    <div class="contSubCateg">
+<div class="contGeneral">
+  <div class="contSubCateg">
 
     <div class="subContenido">
       <ul>
@@ -132,6 +132,17 @@
         <li><a href="#" >Reflectores</a></li>
 
       </ul>
+
+      <ul>
+        <h5><strong>Provincias</strong></h5>
+      </ul>
+      <hr>
+      <ul>
+        <li><a href="#" >Norte Cibao </a></li>
+        <li><a href="#" >Sureste </a></li>
+        <li><a href="#" >Suroeste</a></li>
+
+      </ul>
     </div> <!--SubCategorias-->
     </div><!--Contenedor de las subcategorias-->
 
@@ -140,173 +151,251 @@
   <div class="contTarjetas">
 
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
       </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
       </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
       </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
-      </div>
-    </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Update</h2>
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
       </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
       </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
       </div>
-    </div>
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
+      </div>
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
+      </div>
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
+      </div>
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
+      </div>
+
+      <div class="tarjetilla">
+        <div class="imagenTarj">
+          <img  src="img/kk.jpg" alt="">
+        </div>
+        <div class="datosTarj">
+
+        <div class="nombreTarjProd">
+          <a href="#"><h4>NombreProducto</h4></a>
+        </div>
+        <div class="precioTarjProd">
+          <h5>$48484 Precio</h5>
+        </div>
+        <div class="infoTarjProd">
+          <p>InfoProducto</p>
+        </div>
+
+        <div class="btnAccion">
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </div>
+        </div>
+      </div>
 
 
-    </div>
+  </div>
 
 
 
