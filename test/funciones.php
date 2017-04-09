@@ -58,5 +58,16 @@ function viewAllProd(){
 		</div>";
 	}
 }
+function viewAllMenu($sql){
+include("database.php");
+echo $sql;
+$resultado = $conexion->query($sql);
+while($row = mysqli_fetch_array($resultado)){
+	echo "<div style='width:200px;height:100px;margin:2px;border:1px solid red'>
+
+	</div>";
+}
+};
+
 
 ?>

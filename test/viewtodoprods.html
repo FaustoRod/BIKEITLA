@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    ul li{
+      display: inline;
+    }
+
+    button{
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>
+          <button onclick="verTodo()" id="Bicicleta">Bicicleta</button>
+        </li>
+        <li>
+          <button onclick="verTodo()" id="Accesorio">Accesorio</button>
+        </li>
+        <li>
+          <button onclick="verTodo()" id="Repuestos">Reouestos</button>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+
+    </div>
+
+		<script src="jquery-311.min.js"></script>
+    <script>
+
+
+function verTodo(btn){
+
+  var clave = event.target.id;
+  $.post("viewAllProdCat.php",{clave:clave},function(data){
+    $("#content").html(data);
+  });
+
+};
+
+    </script>
+  </body>
+</html>

@@ -5,6 +5,8 @@ function getProd(){
 
 }
 
+
+
 var x = 1;
 $("#btn-add-input").click(function(){
     if(x < 5){

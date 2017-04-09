@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://localhost/BIKEITLA/perfilUsuario.php -->
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <title></title>
+      <script src="./perfilUsuario.php_files/script.js.descarga"></script>
+
+      <script src="./perfilUsuario.php_files/jquery.min.js.descarga"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="./perfilUsuario.php_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="./perfilUsuario.php_files/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+        <script src="./perfilUsuario.php_files/bootstrap.min.js.descarga" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./perfilUsuario.php_files/style.css">
+
+        <!--Material Design Google -->
+      <link rel="stylesheet" href="./perfilUsuario.php_files/icon">
+      <link rel="stylesheet" href="./perfilUsuario.php_files/material.indigo-pink.min.css">
+      <script defer="" src="./perfilUsuario.php_files/material.min.js.descarga"></script>
+
+
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="./perfilUsuario.php_files/jasny-bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="./perfilUsuario.php_files/jasny-bootstrap.min.js.descarga"></script>
+  </head>
+
+  <body><header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <a href="http://localhost/BIKEITLA/index.php" class="navbar-brand"><strong>Logo</strong></a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li style="margin:10px;">
+             <button type="button" class="btn btn-default" name="btnReg">Registrate</button>
+          </li>
+
+          <li style="margin:10px;">
+            <button type="button" class="btn btn-default" name="btnIniciar"> Ingresar </button>
+          </li>
+          <li>
+            <form class="navbar-form" role="search">
+            <div class="input-group add-on">
+              <input class="form-control" placeholder="Buscar" name="campoBuscar" id="campoBuscar" type="text">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+            </form>
+          </li>
+        </ul> <!--Enlaces de la izquierda-->
+      </div> <!--Contenedor de los elementos-->
+     <!--Contenedor de todo el NavBar-->
+  </nav>  <!--Nav-->
+
+
+  <div class="">  <!--Anuncios(Ads!)-->
+
+  </div>
+
+  <nav class="navbar navbar-default" style="margin-bottom:1px;">
+    <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+        <li><a href="http://localhost/BIKEITLA/index.php">Inicio</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost/BIKEITLA/perfilUsuario.php#">Categorias
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://localhost/BIKEITLA/perfilUsuario.php#">Bicicletas</a></li>
+            <li><a href="http://localhost/BIKEITLA/perfilUsuario.php#">Repuestos</a></li>
+            <li><a href="http://localhost/BIKEITLA/perfilUsuario.php#">Accesorios</a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost/BIKEITLA/perfilUsuario.php#" class="#"> Ayuda</a></li>
+        <li><a href="http://localhost/BIKEITLA/perfilUsuario.php#">Nosotros</a></li>
+      </ul> <!--Enlaces de la izquierda-->
+    </div> <!--Contenedor de los elementos-->
+   <!--Contenedor de todo el NavBar-->
+</nav>  <!--Nav-->
+
+</header>
+
+
+
+
+
+
+
+
+
+ <div class="contPagPerfil">
+
+   <div class="contFotoyNombre">
+     <br>
+     <div class="fotoPerfil">
+       <img src="./perfilUsuario.php_files/perfil.jpg" alt="perfil">
+     </div>
+     <div class="text-center" id="nombrePerfil">
+       <h6>Roniel Antonio Polanco Mejia</h6>
+     </div>
+   </div>
+
+   <div class="container" id="containerMod">
+     <div class="contFormEdit">
+       <div class="text-center letraGris">
+         <h4>Modificar Perfil</h4>
+       </div>
+       <form class="formEditPerfil" action="http://localhost/BIKEITLA/perfilUsuario.php#" method="post" id="formEditPerfil">
+         <div class="form-group letraGris">
+           <label for="nombre">Nombre</label>
+           <div class="input-group">
+             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+             <input type="text" name="nombreEdit" class="form-control" required="">
+           </div>
+
+         </div>
+
+         <div class="form-group letraGris">
+           <label for="apellido">Apellido</label>
+           <div class="input-group">
+             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+             <input type="text" name="apellidoEdit" class="form-control">
+           </div>
+
+         </div>
+
+         <div class="form-group letraGris">
+           <label for="pass">Contraseña</label>
+           <div class="input-group">
+             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+             <input type="text" name="passEdit" class="form-control">
+           </div>
+
+         </div>
+
+         <div class="form-group">
+           <button type="submit" class="btn btn-danger btn-block" name="btnCambios">Guardar Cambios</button>
+         </div>
+
+       </form>
+     </div>
+   </div>
+
+ </div>
+</body></html>
