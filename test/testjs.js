@@ -5,7 +5,10 @@ function getProd(){
 
 }
 
-
+function sortPord(tipo){
+  var tipo = $(tipo).val();
+  alert(tipo);
+}
 
 var x = 1;
 $("#btn-add-input").click(function(){
