@@ -6,6 +6,7 @@
 .contSubCateg{
   border: 1px solid transparent;
   border-radius: 8px;
+  top:20px;
   box-shadow: 2px 3px 15px 5px  #e0e0e0;
 }
 
@@ -88,7 +89,7 @@ a{
 }
 #contGeneral{
   visibility: none;
-  margin-top: -25px;
+
 }
 
 #columnAnuncio{
@@ -97,11 +98,22 @@ left: 15px;
 top: 15px;
 }
 
+.anuncioPrincipal{
+  height: 100%;
+  border: 1px solid red;
+
+}
+
 
 #contAnuncio{
   box-shadow: 0px 0px 5px 7px #eeeeee;
   border-radius: 15px;
   margin:8px;
+  height: 185px;
+}
+.contAnuncio{
+  width: 100%;
+  margin: auto;
 }
 #imgAnuncio{
 
@@ -131,6 +143,10 @@ top: 15px;
   left: 12px;
   bottom: 5px;
 
+}
+
+#contAds{
+  top:22px;
 }
 
 

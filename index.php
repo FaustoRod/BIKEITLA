@@ -100,13 +100,8 @@
 
 <div class="loader" id="loader"> </div>
 
-<div class="text-center" id="textCentroIndex" style="background-color: white; ">
-  <h2>Productos de venta</h2>
-</div>
 
-<div class="row">
-
-  <div class="contGeneral animate-bottom col-lg-12" id="contGeneral">
+  <div class="contGeneral animate-bottom container-fluid" id="contGeneral">
 
     <div class="col-md-2 contSubCateg">
 
@@ -166,68 +161,212 @@
 
 
 
-      <div class="col-md-10" id="columnAnuncio"> <!--Contenedor de todos los anuncios-->
+      <div class="col-md-7 " id="columnAnuncio"> <!--Contenedor de todos los anuncios-->
 
+        <div class="contAnuncio row" id="contAnuncio">
 
-          <div class="col-md-7" id="contAnuncio">
-            <div class="col-md-2" id="imgAnuncio">
-              <img class="image-responsive" src="img/perfil.jpg" alt="ft">
-            </div>
-            <div class="col-sm-4" id="tituloAnuncio">
-              <h5><a href="#">Pareja de Venta</a></h5>
-            </div>
-            <div class="col-md-3">
+          <div class="col-md-3 anuncioPrincipal" >
 
-            </div>
-            <div class="col-sm-2" id="precioAnuncio">
-              <h6>$5,000</h6>
-            </div>
-
-            <div class="row">
-              <div class="col-md-9" id="detalleAnuncio">
-                <p>Detalle del producto con to su vaina</p>
-              </div>
-            </div>
           </div>
 
-          <div class="col-md-7" id="contAnuncio">
-            <div class="col-md-2" id="imgAnuncio">
-              <img class="image-responsive" src="img/perfil.jpg" alt="ft">
-            </div>
-            <div class="col-sm-4" id="tituloAnuncio">
-              <h5><a href="#">Pareja de Venta</a></h5>
-            </div>
-            <div class="col-md-3">
+          <div class="col-md-9 anuncioPrincipal">
+            <div class="row" style="border:1px solid blue; height:33.3%;">
 
-            </div>
-            <div class="col-sm-2" id="precioAnuncio">
-              <h6>$5,000</h6>
-            </div>
+              <div class="col-md-4" style="border:1px solid green; height:100%;">
+                Titulo
+              </div>
 
-            <div class="row">
-              <div class="col-md-9" id="detalleAnuncio">
-                <p>Detalle del producto con to su vaina</p>
+              <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
+                Precio
               </div>
             </div>
+
+            <div class="row" style="border:1px solid blue; height:33.3%;">
+              <div class="col-md-8" style="border:1px solid magenta; height:100%;">
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4" style="border:1px solid yellow; height:100%;">
+
+              </div>
+            </div>
+
+            <div class="" style="border:1px solid blue; height:33.3%;">
+              <div class="" style="height:100%;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="contAnuncio row" id="contAnuncio">
+
+          <div class="col-md-3 anuncioPrincipal" >
+
           </div>
 
-          <div class="col-md-7" id="contAnuncio">
-            <div class="col-md-2" id="imgAnuncio">
-              <img class="image-responsive" src="img/perfil.jpg" alt="ft">
-            </div>
-            <div class="col-sm-4" id="tituloAnuncio">
-              <h5><a href="#">Pareja de Venta</a></h5>
-            </div>
-            <div class="col-md-3">
+          <div class="col-md-9 anuncioPrincipal">
+            <div class="row" style="border:1px solid blue; height:33.3%;">
 
-            </div>
-            <div class="col-sm-2" id="precioAnuncio">
-              <h6>$5,000</h6>
+              <div class="col-md-4" style="border:1px solid green; height:100%;">
+                Titulo
+              </div>
+
+              <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
+                Precio
+              </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-9" id="detalleAnuncio">
-                <p>Detalle del producto con to su vaina</p>
+            <div class="row" style="border:1px solid blue; height:33.3%;">
+              <div class="col-md-8" style="border:1px solid magenta; height:100%;">
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4" style="border:1px solid yellow; height:100%;">
+
+              </div>
+            </div>
+
+            <div class="" style="border:1px solid blue; height:33.3%;">
+              <div class="" style="height:100%;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="contAnuncio row" id="contAnuncio">
+
+          <div class="col-md-3 anuncioPrincipal" >
+
+          </div>
+
+          <div class="col-md-9 anuncioPrincipal">
+            <div class="row" style="border:1px solid blue; height:33.3%;">
+
+              <div class="col-md-4" style="border:1px solid green; height:100%;">
+                Titulo
+              </div>
+
+              <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
+                Precio
+              </div>
+            </div>
+
+            <div class="row" style="border:1px solid blue; height:33.3%;">
+              <div class="col-md-8" style="border:1px solid magenta; height:100%;">
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+                <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4" style="border:1px solid yellow; height:100%;">
+
+              </div>
+            </div>
+
+            <div class="" style="border:1px solid blue; height:33.3%;">
+              <div class="" style="height:100%;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
+          <div class="contAnuncio row" id="contAnuncio">
+
+            <div class="col-md-3 anuncioPrincipal" >
+
+            </div>
+
+            <div class="col-md-9 anuncioPrincipal">
+              <div class="row" style="border:1px solid blue; height:33.3%;">
+
+                <div class="col-md-4" style="border:1px solid green; height:100%;">
+                  Titulo
+                </div>
+
+                <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
+                  Precio
+                </div>
+              </div>
+
+              <div class="row" style="border:1px solid blue; height:33.3%;">
+                <div class="col-md-8" style="border:1px solid magenta; height:100%;">
+                  <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                  </div>
+
+                  <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                  </div>
+
+                  <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                  </div>
+
+                  <div class="col-md-3" style="border:1px solid green; height:100%;">
+
+                  </div>
+
+                </div>
+
+                <div class="col-md-4" style="border:1px solid yellow; height:100%;">
+
+                </div>
+              </div>
+
+              <div class="" style="border:1px solid blue; height:33.3%;">
+                <div class="" style="height:100%;">
+
+              </div>
               </div>
             </div>
           </div>
@@ -237,10 +376,32 @@
         </div>
 
 
-      </div>
 
+
+
+
+
+
+
+
+        <div class="col-md-3" style="background-color:transparent;" id="contAds">
+
+          <div class="" style="border:1px solid blue; width:80%;  height:300px; margin:auto; margin-bottom:10px;">
+
+          </div>
+
+          <div class="" style="border:1px solid blue; width:80%; height:455px; margin:auto;">
+
+          </div>
+
+        </div>
 
   </div>
+
+
+
+
+
 
 
 
