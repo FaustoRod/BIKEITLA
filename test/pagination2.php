@@ -1,18 +1,17 @@
 <?php
 include("database.php");
 $tipo = $_GET['tipo'];
-if(empty($tipo)){$sql ="select * from testpost";
-}else{
-	$sql ="select * from testpost where categoria = '{$tipo}'";
-}
-echo $sql;
+$sql ="select * from testpost";
 $resultado = $conexion->query($sql);
 $total = $resultado->num_rows;
+
 $adjacents = 3;
-$targetpage = "pagination.php"; //your file name
+$targetpage = "pagination2.php"; //your file name
 $limit = 3; //how many items to show per page
 $page = $_GET['page'];
-if($page > 0){
+echo $page;
+echo $tipo;
+if($page){
 $start = ($page - 1) * $limit; //first item to display on this page
 }else{
 $start = 0;
@@ -24,8 +23,7 @@ $prev = $page - 1; //previous page is current page - 1
 $next = $page + 1; //next page is current page + 1
 $lastpage = ceil($total/$limit); //lastpage.
 $lpm1 = $lastpage - 1; //last page minus 1
-if(empty($tipo)){
-
+if($tipo == ""){
 $sql2 = "select * from testpost where 1=1";
 $sql2 .= " order by id_post  limit $start ,$limit ";
 }else{
@@ -43,12 +41,8 @@ if($lastpage > 1)
 {
 $pagination .= "<div class='pagination1'> <ul>";
 if ($page > $counter+1) {
-	if(empty($tipo)){
 $pagination.= "<li><a href=\"$targetpage?page=$prev\">prev</a></li>";
-}else{
-	$pagination.= "<li><a href=\"$targetpage?page=$prev&tipo={$tipo}\">prev</a></li>";
 }
-};
 
 if ($lastpage < 7 + ($adjacents * 2))
 {
@@ -56,11 +50,8 @@ for ($counter = 1; $counter <= $lastpage; $counter++)
 {
 if ($counter == $page)
 $pagination.= "<li><a href='#' class='active'>$counter</a></li>";
-else if(empty($tipo)){
+else
 $pagination.= "<li><a href=\"$targetpage?page=$counter\">$counter</a></li>";
-}else{
-	$pagination.= "<li><a href=\"$targetpage?page=$counter&tipo={$tipo}\">$counter</a></li>";
-}
 }
 }
 elseif($lastpage > 5 + ($adjacents * 2)) //enough pages to hide some
@@ -72,26 +63,16 @@ for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
 {
 if ($counter == $page)
 $pagination.= "<li><a href='#' class='active'>$counter</a></li>";
-else if(empty($tipo)){
+else
 $pagination.= "<li><a href=\"$targetpage?page=$counter\">$counter</a></li>";
-}else{
-	$pagination.= "<li><a href=\"$targetpage?page=$counter&tipo={$tipo}\">$counter</a></li>";
 }
-}
-if(empty($tipo)){
 $pagination.= "<li>...</li>";
 $pagination.= "<li><a href=\"$targetpage?page=$lpm1\">$lpm1</a></li>";
 $pagination.= "<li><a href=\"$targetpage?page=$lastpage\">$lastpage</a></li>";
-}else{
-	$pagination.= "<li>...</li>";
-	$pagination.= "<li><a href=\"$targetpage?page=$lpm1&tipo={$tipo}\">$lpm1</a></li>";
-	$pagination.= "<li><a href=\"$targetpage?page=$lastpage&tipo={$tipo}\">$lastpage</a></li>";
-}
 }
 //in middle; hide some front and some back
 elseif($lastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
 {
-	if(empty($tipo)){
 $pagination.= "<li><a href=\"$targetpage?page=1\">1</a></li>";
 $pagination.= "<li><a href=\"$targetpage?page=2\">2</a></li>";
 $pagination.= "<li>...</li>";
@@ -105,26 +86,10 @@ $pagination.= "<li><a href=\"$targetpage?page=$counter\">$counter</a></li>";
 $pagination.= "<li>...</li>";
 $pagination.= "<li><a href=\"$targetpage?page=$lpm1\">$lpm1</a></li>";
 $pagination.= "<li><a href=\"$targetpage?page=$lastpage\">$lastpage</a></li>";
-}else{
-	$pagination.= "<li><a href=\"$targetpage?page=1&tipo={$tipo}\">1</a></li>";
-	$pagination.= "<li><a href=\"$targetpage?page=2&tipo={$tipo}\">2</a></li>";
-	$pagination.= "<li>...</li>";
-	for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
-	{
-	if ($counter == $page)
-	$pagination.= "<li><a href='#' class='active'>$counter</a></li>";
-	else
-	$pagination.= "<li><a href=\"$targetpage?page=$counter&tipo={$tipo}\">$counter</a></li>";
-	}
-	$pagination.= "<li>...</li>";
-	$pagination.= "<li><a href=\"$targetpage?page=$lpm1&tipo={$tipo}\">$lpm1</a></li>";
-	$pagination.= "<li><a href=\"$targetpage?page=$lastpage&tipo={$tipo}\">$lastpage</a></li>";
-}
 }
 //close to end; only hide early pages
 else
 {
-	if(empty($tipo)){
 $pagination.= "<li><a href=\"$targetpage?page=1\">1</a></li>";
 $pagination.= "<li><a href=\"$targetpage?page=2\">2</a></li>";
 $pagination.= "<li>...</li>";
@@ -136,29 +101,12 @@ $pagination.= "<li><a href='#' class='active'>$counter</a></li>";
 else
 $pagination.= "<li><a href=\"$targetpage?page=$counter\">$counter</a></li>";
 }
-}else{
-	$pagination.= "<li><a href=\"$targetpage?page=1&tipo={$tipo}\">1</a></li>";
-	$pagination.= "<li><a href=\"$targetpage?page=2&tipo={$tipo}\">2</a></li>";
-	$pagination.= "<li>...</li>";
-	for ($counter = $lastpage - (2 + ($adjacents * 2)); $counter <= $lastpage;
-	$counter++)
-	{
-	if ($counter == $page)
-	$pagination.= "<li><a href='#' class='active'>$counter</a></li>";
-	else
-	$pagination.= "<li><a href=\"$targetpage?page=$counter&tipo={$tipo}\">$counter</a></li>";
-	}
-}
 }
 }
 
 //next button
 if ($page < $counter - 1)
-if(empty($tipo)){
 $pagination.= "<li><a href=\"$targetpage?page=$next\">next</a></li>";
-}else{
-	$pagination.= "<li><a href=\"$targetpage?page=$next&tipo={$tipo}\">next</a></li>";
-}
 else
 $pagination.= "";
 $pagination.= "</ul></div>\n";
@@ -227,7 +175,7 @@ echo $pagination;
 <script>
 function sortProd(){
   var tipo = event.target.id;
-  window.location = "pagination.php?tipo="+tipo+"&page=1";
+  window.location = "pagination2.php?tipo="+tipo+"&page=1";
 }
 
 </script>
