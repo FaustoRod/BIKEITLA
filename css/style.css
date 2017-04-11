@@ -435,6 +435,17 @@ margin: auto;
   margin-bottom: 10px;
 }
 
+.fotoPerAdmin{
+  width: 200px;
+  height: 155px;
+}
+.fotoPerAdmin>img{
+  width: 150px;
+  height: 150px;
+  border-radius: 90px;
+  display: block;
+  margin: auto;
+}
 
 
 
