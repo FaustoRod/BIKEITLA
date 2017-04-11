@@ -29,7 +29,9 @@
        <link rel="stylesheet" href="css/style.css">
       <script src="js/script.js"></script>
       <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </head>
+
+
+      </head>
 
   <header>
     <nav class="navbar navbar-default">
@@ -40,12 +42,9 @@
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-          <li style="margin:10px;">
-             <button type="button" class="btn btn-default" name="btnReg">Registrate</button>
-          </li>
 
           <li style="margin:10px;">
-            <button type="button" class="btn btn-default" name="btnIniciar"> Ingresar </button>
+            <button type="button" class="btn btn-default" name="btnIniciar"><span class="glyphicon glyphicon-log-in"></span> Ingresar </button>
           </li>
           <li>
             <form class="navbar-form" role="search">
@@ -101,7 +100,7 @@
 <div class="loader" id="loader"> </div>
 
 
-  <div class="contGeneral animate-bottom container-fluid" id="contGeneral">
+<div class="contGeneral animate-bottom container-fluid" id="contGeneral">
 
     <div class="col-md-2 contSubCateg">
 
@@ -156,163 +155,84 @@
           <li><a href="#" >Suroeste</a></li>
 
         </ul>
+
+        <ul>
+          <h5><strong>Rango de precio</strong></h5>
+        </ul>
+        <hr>
+        <!-- Slider with Starting Value -->
+      <input id="min_precio" class="rango" name="rango_precio" type="range"
+        min="100" step="100" max="150000" value="100" tabindex="0">
+        <span id="rango_precio"></span>
       </div> <!--SubCategorias-->
-      </div><!--Contenedor de las subcategorias-->
+  </div><!--Contenedor de las subcategorias-->
+
+<script type="text/javascript">
+$('document').ready(function(){
+  $('#min_precio').change(function(){
+    var precio= $(this).val()
+    $('#rango_precio').text("Precio:$"+precio)
+  });
+});
+
+$.ajax({
+  url: , //Aqui La url donde se solicitara el post
+  method:"POST",
+  data:{precio:precio},
+  success: function(data){
+    $(/*Aqui la clase o id recarga los productos en este caso  .columnAnuncio*/).fadeIn(500).html(data);
+  }
+})
+
+</script>
 
 
+  <div class="col-md-7 " id="columnAnuncio"> <!--Contenedor de todos los anuncios-->
 
-      <div class="col-md-7 " id="columnAnuncio"> <!--Contenedor de todos los anuncios-->
+      <div class="contAnuncio row" id="contAnuncio">
 
-        <div class="contAnuncio row" id="contAnuncio">
-
-          <div class="col-md-3 anuncioPrincipal" >
-
+          <div class="col-md-3 anuncioPrincipal"  >
+              <img src="img/kk.jpg" alt="ft" id="ftProdTarj">
           </div>
 
           <div class="col-md-9 anuncioPrincipal">
-            <div class="row" style="border:1px solid blue; height:33.3%;">
+            <div class="row" style=" height:33.3%;">
 
-              <div class="col-md-4" style="border:1px solid green; height:100%;">
-                Titulo
+              <div class="col-md-4" style=" height:100%;">
+                <h5>Bicicleta Aro 20</h5>
               </div>
 
-              <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
-                Precio
-              </div>
-            </div>
-
-            <div class="row" style="border:1px solid blue; height:33.3%;">
-              <div class="col-md-8" style="border:1px solid magenta; height:100%;">
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-              </div>
-
-              <div class="col-md-4" style="border:1px solid yellow; height:100%;">
-
+              <div id="precioTarj" class="col-md-4 col-md-offset-4" style=" height:100%;">
+                <h5>$6,500</h5>
               </div>
             </div>
 
-            <div class="" style="border:1px solid blue; height:33.3%;">
+            <div class="row" style=" height:33.3%;">
+              <div class="col-md-8" style=" height:100%;">
+                <div class="col-md-4" style=" height:100%;">
+                  <h8><span class="glyphicon glyphicon-road"></span> BMX</h8>
+                </div>
+
+                <div class="col-md-4" style="height:100%;">
+                  <h8><span class="glyphicon glyphicon-user"></span> roniel06</h8>
+                </div>
+
+
+
+                <div class="col-md-3" style=" height:100%;">
+                  Hora
+                </div>
+
+              </div>
+
+              <div class="col-md-4" style=" height:100%;">
+
+              </div>
+            </div>
+
+            <div class="" style=" height:33.3%;">
               <div class="" style="height:100%;">
-
-            </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="contAnuncio row" id="contAnuncio">
-
-          <div class="col-md-3 anuncioPrincipal" >
-
-          </div>
-
-          <div class="col-md-9 anuncioPrincipal">
-            <div class="row" style="border:1px solid blue; height:33.3%;">
-
-              <div class="col-md-4" style="border:1px solid green; height:100%;">
-                Titulo
-              </div>
-
-              <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
-                Precio
-              </div>
-            </div>
-
-            <div class="row" style="border:1px solid blue; height:33.3%;">
-              <div class="col-md-8" style="border:1px solid magenta; height:100%;">
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-              </div>
-
-              <div class="col-md-4" style="border:1px solid yellow; height:100%;">
-
-              </div>
-            </div>
-
-            <div class="" style="border:1px solid blue; height:33.3%;">
-              <div class="" style="height:100%;">
-
-            </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="contAnuncio row" id="contAnuncio">
-
-          <div class="col-md-3 anuncioPrincipal" >
-
-          </div>
-
-          <div class="col-md-9 anuncioPrincipal">
-            <div class="row" style="border:1px solid blue; height:33.3%;">
-
-              <div class="col-md-4" style="border:1px solid green; height:100%;">
-                Titulo
-              </div>
-
-              <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
-                Precio
-              </div>
-            </div>
-
-            <div class="row" style="border:1px solid blue; height:33.3%;">
-              <div class="col-md-8" style="border:1px solid magenta; height:100%;">
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-                <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                </div>
-
-              </div>
-
-              <div class="col-md-4" style="border:1px solid yellow; height:100%;">
-
-              </div>
-            </div>
-
-            <div class="" style="border:1px solid blue; height:33.3%;">
-              <div class="" style="height:100%;">
-
+                Detalle del producto con to la vaina
             </div>
             </div>
           </div>
@@ -320,56 +240,10 @@
 
 
 
-          <div class="contAnuncio row" id="contAnuncio">
 
-            <div class="col-md-3 anuncioPrincipal" >
 
-            </div>
 
-            <div class="col-md-9 anuncioPrincipal">
-              <div class="row" style="border:1px solid blue; height:33.3%;">
 
-                <div class="col-md-4" style="border:1px solid green; height:100%;">
-                  Titulo
-                </div>
-
-                <div class="col-md-4 col-md-offset-4" style="border:1px solid purple; height:100%;">
-                  Precio
-                </div>
-              </div>
-
-              <div class="row" style="border:1px solid blue; height:33.3%;">
-                <div class="col-md-8" style="border:1px solid magenta; height:100%;">
-                  <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                  </div>
-
-                  <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                  </div>
-
-                  <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                  </div>
-
-                  <div class="col-md-3" style="border:1px solid green; height:100%;">
-
-                  </div>
-
-                </div>
-
-                <div class="col-md-4" style="border:1px solid yellow; height:100%;">
-
-                </div>
-              </div>
-
-              <div class="" style="border:1px solid blue; height:33.3%;">
-                <div class="" style="height:100%;">
-
-              </div>
-              </div>
-            </div>
-          </div>
 
 
 
@@ -396,19 +270,17 @@
 
         </div>
 
+
+
   </div>
 
 
 
-
-
-
-
-
-</div>
+<footer class="mdl-mini-footer" style="bottom:0px;position:relative; width:100%;">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo"></div>
+    <ul class="mdl-mini-footer__link-list">
+    </ul>
+  </div>
+</footer>
 </body>
-<?php
-
-include_once("footer.php");
-
- ?>

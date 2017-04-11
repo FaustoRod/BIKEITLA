@@ -4,18 +4,25 @@ include_once("headerSecundario.php");
 
  <div class="contPagPerfil">
 
-   <div class="contFotoyNombre">
-     <br>
-     <div class="fotoPerfil">
-       <img src="img/perfil.jpg" alt="perfil">
+   <div class="container-fluid " style="height:250px">
+     <div class="col-md-12" >
+
+       <div class="col-md-6 col-md-offset-3"  >
+         <div class="col-md-4 col-md-offset-4"  style=" background-color:inherit; border:1px solid red;">
+           <img src="img/perfil.jpg" alt="perfil" style="margin:auto; background-color:inherit; width:150px; height:150px; border-radius:90px;">
+         </div>
+       </div>
      </div>
-     <div class="text-center" id="nombrePerfil">
+
+     <div class="text-center" style=" background-color:inherit;">
        <h6>Roniel Antonio Polanco Mejia</h6>
      </div>
-   </div>
 
-   <div class="container" id="containerMod">
-     <div class="contFormEdit">
+     </div>
+
+
+   <div class="container-fluid" id="containerMod">
+     <div class="col-md-4 col-md-offset-4 contFormEdit">
        <div class="text-center letraGris">
          <h4>Modificar Perfil</h4>
        </div>
@@ -56,3 +63,11 @@ include_once("headerSecundario.php");
    </div>
 
  </div>
+
+ <footer class="mdl-mini-footer" style="bottom:0px;position:relative; width:100%;">
+   <div class="mdl-mini-footer__left-section">
+     <div class="mdl-logo"></div>
+     <ul class="mdl-mini-footer__link-list">
+     </ul>
+   </div>
+ </footer>
