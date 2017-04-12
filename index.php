@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+include("php/funciones.php");
 include("php/database.php");
 $tipo = $_GET['tipo'];
 if(empty($tipo))
@@ -8,6 +9,28 @@ if(empty($tipo))
 }else{
 	$sql ="SELECT * FROM publicaciones= '{$tipo}'";
 }
+
+$sqlf1 = "SELECT 	fotoAd FROM publicidad WHERE id = 1";
+$r = $conexion->query($sqlf1);
+if($row = mysqli_fetch_array($r)){
+	$fotoAd =  $row['fotoAd'];
+	$foto1 = substr($fotoAd,3);
+}
+
+$sqlf2 = "SELECT 	fotoAd FROM publicidad WHERE id = 2";
+$r = $conexion->query($sqlf2);
+if($row = mysqli_fetch_array($r)){
+	$fotoAd =  $row['fotoAd'];
+	$foto2 = substr($fotoAd,3);
+}
+
+$sqlf3 = "SELECT 	fotoAd FROM publicidad WHERE id = 3";
+$r = $conexion->query($sqlf3);
+if($row = mysqli_fetch_array($r)){
+	$fotoAd =  $row['fotoAd'];
+	$foto3 = substr($fotoAd,3);
+};
+
 
 $resultado = $conexion->query($sql);
 $total = $resultado->num_rows;
@@ -204,7 +227,7 @@ $pagination.= "</ul></div>\n";
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a href="index.php" class="navbar-brand"><strong>Logo</strong></a>
+          <a href="index.php" class="navbar-brand"><strong>BIKEITLA</strong></a>
         </div>
         <ul class="nav navbar-nav navbar-right"><?php
 
@@ -239,8 +262,8 @@ $pagination.= "</ul></div>\n";
       </div> <!--Contenedor de los elementos-->
     </div> <!--Contenedor de todo el NavBar-->
   </nav>  <!--Nav-->
-      <div class="">  <!--Anuncios(Ads!)-->
-
+      <div style="width:100%;height:250px;" class="anuncio">  <!--Anuncios(Ads!)-->
+				<img style="width:100%;height:100%" src="<?php  echo $foto1;?>"/>
       </div>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -380,8 +403,10 @@ $pagination.= "</ul></div>\n";
 
 <div class="col-md-3" style="background-color:transparent;height:730px;" id="contAds">
   <div class="" style="border:1px solid blue; width:80%;  height:30%; margin:auto; margin-bottom:10px;">
+		<img style="width:100%;height:100%;" src="<?php echo $foto2?>"/>
     </div>
       <div class="" style="border:1px solid blue; width:80%; height:70%; margin:auto;">
+				<img style="width:100%;height:100%;" src="<?php echo $foto3?>"/>
       </div>
 </div>
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">

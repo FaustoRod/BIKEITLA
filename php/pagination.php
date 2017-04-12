@@ -9,8 +9,8 @@ echo $sql;
 $resultado = $conexion->query($sql);
 $total = $resultado->num_rows;
 $adjacents = 3;
-$targetpage = "pagination.php"; //your file name
-$limit = 3; //how many items to show per page
+$targetpage = "index.php"; //your file name
+$limit = 4; //how many items to show per page
 $page = $_GET['page'];
 if($page > 0){
 $start = ($page - 1) * $limit; //first item to display on this page

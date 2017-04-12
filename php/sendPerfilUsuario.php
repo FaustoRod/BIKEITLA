@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 $tipo = $_GET['tipo'];
 $id = $_GET['id'];
