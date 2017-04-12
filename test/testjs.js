@@ -1,7 +1,7 @@
 function getProd(){
 
     var id = event.target.id;
-    window.location = "producto.php?id=" + id;
+    window.location = "php/producto.php?id=" + id;
 
 }
 

@@ -16,6 +16,13 @@ function logout(){
   }
 }
 
+function getProd(btn){
+
+    var id = btn;
+    window.location = "views/verProducto.php?id=" + id;
+
+}
+
 /*$("#btn-logout").click(function(){
   var c = confirm("Seguro que desea finalizar sesion?");
   if(c){

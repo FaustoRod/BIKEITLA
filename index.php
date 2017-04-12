@@ -216,7 +216,7 @@ $pagination.= "</ul></div>\n";
             ";
           }else{
             echo "<li style='margin:10px;'>
-              <div style='font-size:25px;margin-top:5px;'>Bienvenido <a style='font-size:25px;' href=''>{$_SESSION['user']}</a></div>
+              <div style='font-size:25px;margin-top:5px;'>Bienvenido <a href='views/perfilUsuario.php?id={$_SESSION['id_user']}' cstyle='font-size:25px;' href=''>{$_SESSION['user']}</a></div>
             </li>
             <li style='margin:10px;'>
               <button id='btn-logout' onclick=logout() style='background-color:transparent;border:1px solid blue; box-shadow: 0px 2px 2px rgba(0,0,0,0.5);' class='btn'>Cerrar Session</button>
@@ -335,17 +335,14 @@ $pagination.= "</ul></div>\n";
       $r = $conexion->query($sqlFotos);
       while($fila = mysqli_fetch_array($r)){
         $foto = substr($fila[foto],3);
-        echo "<div class=\"contAnuncio row\" id={$row['id']} style=\"box-shadow: -2px 5px 10px 10px #eeeeee;
-        border-radius: 25px;
-        margin:8px;
-        height: 185px;\">
-            <div class=\"col-md-3 anuncioPrincipal\"  >
+        echo "<div class=\"contAnuncio row\" id={$row['id']} style=\"box-shadow: -2px 5px 10px 10px #eeeeee; border-radius: 25px; margin:8px; height: 185px;\">
+            <div class=\"col-md-3 anuncioPrincipal\">
                 <img src='{$foto}' alt='{$row['categoria']}{$row['tipo']}{$row['marca']}{$row['modelo']}' id=\"ftProdTarj\" style=\"height:100%;\">
             </div>
             <div class=\"col-md-9 anuncioPrincipal\">
               <div class=\"row\" style=\" height:33.3%;\">
                 <div class=\"col-md-4\" style=\" height:100%;\">
-                  <h4>{$row['titulo']}</h4>
+                  <button id='{$row['id']}' class=\"btn btn-link\" onclick=\"getProd(this.id)\"><h4>{$row['titulo']}</h4></button>
                 </div>
                 <div id=\"precioTarj\" class=\"col-md-4 col-md-offset-4\" style=\" height:100%;\">
                   <h5>RD$ {$row['precio']}</h5>
@@ -372,8 +369,7 @@ $pagination.= "</ul></div>\n";
               </div>
               </div>
             </div>
-          </div>
-    ";
+          </div>  ";
       }
     }
 
@@ -413,6 +409,7 @@ $pagination.= "</ul></div>\n";
     <ul class="mdl-mini-footer__link-list">
     </ul>
   </div>
+
 </footer>
 <script>
 function sortProd(){
@@ -421,5 +418,3 @@ function sortProd(){
 }
 
 </script>
-</body>
-</html>
