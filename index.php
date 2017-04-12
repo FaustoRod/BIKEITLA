@@ -216,7 +216,7 @@ $pagination.= "</ul></div>\n";
             ";
           }else{
             echo "<li style='margin:10px;'>
-              <div style='font-size:25px;margin-top:5px;'>Bienvenido <a href='views/perfilUsuario.php?id={$_SESSION['id_user']}' cstyle='font-size:25px;' href=''>{$_SESSION['user']}</a></div>
+              <div style='font-size:25px;margin-top:5px;'>Bienvenido <a href='php/sendPerfilUsuario.php?tipo={$_SESSION['tipo']}&id={$_SESSION['id_user']}' style='font-size:25px;'>{$_SESSION['user']}</a></div>
             </li>
             <li style='margin:10px;'>
               <button id='btn-logout' onclick=logout() style='background-color:transparent;border:1px solid blue; box-shadow: 0px 2px 2px rgba(0,0,0,0.5);' class='btn'>Cerrar Session</button>
