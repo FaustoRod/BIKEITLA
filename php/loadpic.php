@@ -21,11 +21,10 @@ if(isset($_FILES['foto'])){
 			$conexion->query($sql);
 
 			if($conexion->affected_rows ===1){
-				echo "a la base de dato";
-				echo $id;
+				header("Location:../index.php");
 			}
 		}else{
-			echo "erro";
+			echo "error";
 		}
 	}
 

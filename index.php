@@ -157,41 +157,13 @@ session_start();
   </div><!--Contenedor de las subcategorias-->
 
   <div class="col-md-7 " id="columnAnuncio"> <!--Contenedor de todos los anuncios-->
-      <div class="contAnuncio row" id="contAnuncio">
-          <div class="col-md-3 anuncioPrincipal"  >
-              <img src="img/kk.jpg" alt="ft" id="ftProdTarj">
-          </div>
-          <div class="col-md-9 anuncioPrincipal">
-            <div class="row" style=" height:33.3%;">
-              <div class="col-md-4" style=" height:100%;">
-                <h5>Bicicleta Aro 20</h5>
-              </div>
-              <div id="precioTarj" class="col-md-4 col-md-offset-4" style=" height:100%;">
-                <h5>$6,500</h5>
-              </div>
-            </div>
-            <div class="row" style=" height:33.3%;">
-              <div class="col-md-8" style=" height:100%;">
-                <div class="col-md-4" style=" height:100%;">
-                  <h8><span class="glyphicon glyphicon-road"></span> BMX</h8>
-                </div>
-                <div class="col-md-4" style="height:100%;">
-                  <h8><span class="glyphicon glyphicon-user"></span> roniel06</h8>
-                </div>
-                <div class="col-md-3" style=" height:100%;">
-                  Hora
-                </div>
-              </div>
-              <div class="col-md-4" style=" height:100%;">
-              </div>
-            </div>
-            <div class="" style=" height:33.3%;">
-              <div class="" style="height:100%;">
-                Detalle del producto con to la vaina
-            </div>
-            </div>
-          </div>
-        </div>
+
+        <?php
+        include("php/funciones.php");
+        viewall();
+
+        ?>
+
 </div>
 
 <div class="col-md-3" style="background-color:transparent;height:730px;" id="contAds">

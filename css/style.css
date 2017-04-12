@@ -95,8 +95,10 @@ a{
   visibility: none;
 }
 
+
+
 #precioTarj>h5{
-  text-decoration:underline;
+  /*text-decoration:underline;*/
 }
 
 #columnAnuncio{

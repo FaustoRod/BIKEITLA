@@ -1,9 +1,9 @@
 <?php
 include("database.php");
 $tipo = $_GET['tipo'];
-if(empty($tipo)){$sql ="select * from publicaciones";
+if(empty($tipo)){$sql ="select * from testpost";
 }else{
-	$sql ="select * from publicaciones where categoria = '{$tipo}'";
+	$sql ="select * from testpost where categoria = '{$tipo}'";
 }
 echo $sql;
 $resultado = $conexion->query($sql);
@@ -26,14 +26,7 @@ $lastpage = ceil($total/$limit); //lastpage.
 $lpm1 = $lastpage - 1; //last page minus 1
 if(empty($tipo)){
 
-$sql2 = "SELECT usuario.nombre as nombre_usuario,usuario.apellido AS
-apellido_usuario,usuario.usuario AS user_usuario,usuario.email
-AS email_usuario,usuario.region AS region_usuario,usuario.provincia
-AS provincia_usuario, usuario.municipio as usuario_municipio,usuario.telefono1 as usuario_telefono,
-usuario.telefono2 as usuario_telefono2, publicaciones.id AS id ,publicaciones.titulo as titulo, publicaciones.categoria as categoria,
-publicaciones.tipo as tipo,publicaciones.marca as marca,publicaciones.modelo as modelo,
-publicaciones.precio AS precio, publicaciones.descripcion as descripcion FROM publicaciones INNER JOIN usuario on
-publicaciones.id_user= usuario.id";
+$sql2 = "select * from testpost where 1=1";
 $sql2 .= " order by id_post  limit $start ,$limit ";
 }else{
 	$sql2 = "select * from testpost where categoria = '{$tipo}'";
@@ -173,55 +166,59 @@ $pagination.= "</ul></div>\n";
 
 
 ?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pagination</title>
+<style>
+.pagination1 {
+margin:0;
+padding:0;
+float:left;
+}
+.pagination1 ul {
+width:600px;
+float: right;
+list-style: none;
+margin:0 0 0 ;
+padding:0;
+}
+.pagination1 li span { line-height:45px; font-weight:bold;}
+.pagination1 li {
+margin:0 0 0 0;
+float:left;
+font-size:16px;
+text-transform:uppercase;
+}
+.pagination1 li a {
+color:#7f8588;
+padding:10px 0 0 0; width:33px; height:33px;
+text-decoration:none; text-align:center;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+display:block;
+}
+.pagination1 li:last-child a:hover { background:none; color:#7f8588;}
+.pagination1 li:first-child a:hover { background:none;color:#7f8588;}
+.pagination1 li a:hover {
+color:#fff;
+text-decoration: none;
+display: block;
+padding:10px 0 0 0; width:33px; height:33px;
+}
+.pagination1 li.activepage a {
+color:#fff;
+text-decoration: none;
+padding: 10px 0 0 0; }
+</style>
+</head>
+
+<body>
 
 <?php
-
-while ($row = mysqli_fetch_array($resultado)){
-	$sqlFotos = "Select foto FROM publicaciones_fotos where id_publicacion = {$row['id']} LIMIT 1";
-	$r = $conexion->query($sqlFotos);
-	while($fila = mysqli_fetch_array($r)){
-		$foto = substr($fila[foto],3);
-		echo "<div class=\"contAnuncio row\" id={$row['id']} style=\"box-shadow: -2px 5px 10px 10px #eeeeee;
-		border-radius: 25px;
-		margin:8px;
-		height: 185px;\">
-				<div class=\"col-md-3 anuncioPrincipal\"  >
-						<img src='{$foto}' alt='{$row['categoria']}{$row['tipo']}{$row['marca']}{$row['modelo']}' id=\"ftProdTarj\" style=\"height:100%;\">
-				</div>
-				<div class=\"col-md-9 anuncioPrincipal\">
-					<div class=\"row\" style=\" height:33.3%;\">
-						<div class=\"col-md-4\" style=\" height:100%;\">
-							<h4>{$row['titulo']}</h4>
-						</div>
-						<div id=\"precioTarj\" class=\"col-md-4 col-md-offset-4\" style=\" height:100%;\">
-							<h5>RD$ {$row['precio']}</h5>
-						</div>
-					</div>
-					<div class=\"row\" style=\" height:33.3%;\">
-						<div class=\"col-md-8\" style=\" height:100%;\">
-							<div class=\"col-md-6\" style=\" height:100%;\">
-								<h8><span class=\"glyphicon glyphicon-th-list\"></span> {$row['categoria']}/{$row['tipo']}</h8>
-							</div>
-							<div class=\"col-md-3\" style=\"height:100%;\">
-								<h8><span class=\"glyphicon glyphicon-user\"></span> {$row['user_usuario']}</h8>
-							</div>
-							<div class=\"col-md-3\" style=\" height:100%;\">
-						in		<h8><span class=\"glyphicon glyphicon-globe\"></span> {$row['region_usuario']}</h8>
-							</div>
-						</div>
-						<div class=\"col-md-4\" style=\" height:100%;\">
-						</div>
-					</div>
-					<div style=\" height:33.3%;\">
-						<div style=\"height:100%;\">
-						{$row['descripcion']}
-					</div>
-					</div>
-				</div>
-			</div>
-";
+	while($row = mysqli_fetch_array($sql_query)){
+		echo $row['titulo']." - ".$row['tipo']."<br>";
 	}
-}
 
 echo $pagination;
 ?>
@@ -232,3 +229,6 @@ function sortProd(){
 }
 
 </script>
+</body>
+
+</html>
