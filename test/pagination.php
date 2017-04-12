@@ -1,7 +1,8 @@
 <?php
 include("database.php");
 $tipo = $_GET['tipo'];
-if(empty($tipo)){$sql ="select * from publicaciones";
+if(empty($tipo)){$sql ="select * FROM publicaciones INNER JOIN usuario on
+publicaciones.id_user= usuario.id";
 }else{
 	$sql ="select * from publicaciones where categoria = '{$tipo}'";
 }
@@ -186,7 +187,7 @@ while ($row = mysqli_fetch_array($resultado)){
 		margin:8px;
 		height: 185px;\">
 				<div class=\"col-md-3 anuncioPrincipal\"  >
-						<img src='{$foto}' alt='{$row['categoria']}{$row['tipo']}{$row['marca']}{$row['modelo']}' id=\"ftProdTarj\" style=\"height:100%;\">
+						<img src='{$foto}' alt='{$row['categoria']}{$row['tipo']}{w$row['marca']}{$row['modelo']}' id=\"ftProdTarj\" style=\"height:100%;\">
 				</div>
 				<div class=\"col-md-9 anuncioPrincipal\">
 					<div class=\"row\" style=\" height:33.3%;\">
