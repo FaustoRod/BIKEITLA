@@ -14,7 +14,7 @@ if(move_uploaded_file($file,$dir)){
   $conexion->query($sql);
   if(mysqli_affected_rows($conexion) === 1){
     echo "Actualizada";
-    header("Location:../view/index.php");
+    header("Location:../index.php");
   }else{
     echo mysqli_error();
     echo $sql;

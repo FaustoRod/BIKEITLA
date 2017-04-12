@@ -1,9 +1,8 @@
 <?php
 
-  include("../database.php");
+  include("database.php");
 
   $id = $_POST['id'];
-
   $sql="SELECT * FROM publicidad WHERE id = {$id}";
 
   $resultado = $conexion->query($sql);

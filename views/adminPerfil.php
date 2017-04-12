@@ -1,6 +1,30 @@
 <?php
+
 session_start();
 
+include("../php/funciones.php");
+include("../php/database.php");
+
+$sqlf1 = "SELECT 	fotoAd FROM publicidad WHERE id = 1";
+$r = $conexion->query($sqlf1);
+if($row = mysqli_fetch_array($r)){
+	$fotoAd =  $row['fotoAd'];
+	$foto1 = $fotoAd;
+}
+
+$sqlf2 = "SELECT 	fotoAd FROM publicidad WHERE id = 2";
+$r = $conexion->query($sqlf2);
+if($row = mysqli_fetch_array($r)){
+	$fotoAd =  $row['fotoAd'];
+	$foto2 = $fotoAd;
+}
+
+$sqlf3 = "SELECT 	fotoAd FROM publicidad WHERE id = 3";
+$r = $conexion->query($sqlf3);
+if($row = mysqli_fetch_array($r)){
+	$fotoAd =  $row['fotoAd'];
+	$foto3 = $fotoAd;
+};
 
 
  ?>
@@ -54,9 +78,9 @@ session_start();
       </div> <!--Contenedor de los elementos-->
     </div> <!--Contenedor de todo el NavBar-->
   </nav>  <!--Nav-->
-      <div class="">  <!--Anuncios(Ads!)-->
-
-      </div>
+  <div style="width:100%;height:250px;" class="anuncio">  <!--Anuncios(Ads!)-->
+    <img style="width:100%;height:100%" src="<?php  echo $foto1;?>"/>
+  </div>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <ul class="nav navbar-nav  barraNav">
@@ -82,12 +106,42 @@ session_start();
   </header>
   <section>
 
-      <form action="../php/setAds.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="ads[]"/>
-        <input type="file" name="ads[]"/>
-        <input type="file" name="ads[]"/>
-        <button type="submit" name="btn-sub">Subir</button>
-      </form>
+    <div style="display:inline">
+      <div style="width:300px;height:300px;border:1px solid red;margin:2px;">
+        <img style="width:100%;height:100%;" id="ad1" src="<?php echo $foto1; ?>"/>
+
+
+      </div>
+      <button id="1" onclick="editAd()">editar</button>
+      <div style="width:300px;height:300px;border:1px solid red;margin:2px;">
+        <img style="width:100%;height:100%;"id="ad2" src="<?php echo $foto2; ?>"/>
+
+      </div>
+      <button id="2" onclick="editAd()">editar</button>
+      <div style="width:300px;height:300px;border:1px solid red;margin:2px;">
+        <img style="width:100%;height:100%;" id="ad1" src="<?php echo $foto3; ?>"/>
+
+      </div>
+      <button id="3" onclick="editAd()">editar</button>
+      <div id="editDiv">
+
+
+      </div>
+    </div>
+    <script>
+
+      function editAd(){
+        var id = event.target.id;
+        $.post("../php/editPicPage.php",
+        {
+          id:id
+        },function(data){
+          $("#editDiv").html(data);
+        });
+
+      }
+
+    </script>
 
   </section>
   <footer class="mdl-mini-footer" style="bottom:0px;position:relative; width:100%;">
