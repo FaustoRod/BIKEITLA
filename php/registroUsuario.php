@@ -30,7 +30,7 @@ $conexion->query($sql);
 
 
 if(mysqli_affected_rows($conexion)===1){
-	echo "changel";
+	header("Location:../index.php");
 
 }else{
 	$conexion->connect_error();

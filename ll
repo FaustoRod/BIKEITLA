@@ -1,7 +1,24 @@
-<?php
-include_once("headerSecundario.php");
+<script type="text/javascript">
+$('document').ready(function(){
+  $('#min_precio').change(function(){
+    var precio= $(this).val()
+    $('#rango_precio').text("Precio:$"+precio)
+  });
+});
 
-?>
+$.ajax({
+  url: , //Aqui La url donde se solicitara el post
+  method:"POST",
+  data:{precio:precio},
+  success: function(data){
+    $(/*Aqui la clase o id recarga los productos en este caso  .columnAnuncio*/).fadeIn(500).html(data);
+  }
+})
+
+</script>
+
+
+
 
 <div class="container" id="containerFormProd">
   <div class="text-center" id="infoForm">
@@ -69,4 +86,18 @@ include_once("headerSecundario.php");
 
 </div>
   <script src=""></script>
-</div>
+</div>..
+
+Herramientas
+Gomas
+Amortiguadores
+Piezas pequeñas
+Aros
+Rayos
+Engranajes
+Corta Cadenas
+Switch de cambios delanteros
+Switch de cambios traseros
+Frenos
+Pastillas
+Peda
